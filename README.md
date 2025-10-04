@@ -14,8 +14,6 @@
 - [Technology Stack](#-technology-stack)  
 - [System Architecture](#-system-architecture)  
 - [Installation](#-installation)  
-- [Usage](#-usage)  
-- [Supported Breeds](#-supported-breeds)  
 - [Analytics Dashboard](#-analytics-dashboard)  
 - [Impact & Benefits](#-impact--benefits)  
 - [Future Scope](#-future-scope)  
