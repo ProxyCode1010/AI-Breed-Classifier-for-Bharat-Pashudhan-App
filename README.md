@@ -121,9 +121,8 @@ Copy code
 git clone https://github.com/ProxyCode1010/AI-Breed-Classifier-for-Bharat-Pashudhan-App.git
 cd AI-Breed-Classifier-for-Bharat-Pashudhan-App
 ```
-Setup Virtual Environment
-bash
-Copy code
+### Setup Virtual Environment
+```bash
 # Linux/Mac
 python -m venv venv
 source venv/bin/activate
@@ -131,35 +130,36 @@ source venv/bin/activate
 # Windows
 python -m venv venv
 venv\Scripts\activate
-Install Dependencies
-bash
+```
+### Install Dependencies
+```bash
 Copy code
 pip install -r requirements.txt
 Configure API Keys
 Create a .env file in the project root:
-
-bash
+```
 Copy code
 GROQ_API_KEY=your_groq_api_key_here
-▶️ Usage
+### ▶️ Usage
 Launch the application:
 
-bash
+```bash
 Copy code
 streamlit run app.py
-Select language from sidebar.
+```
+Select your preferred language from the sidebar.
 
 Upload a clear animal image (JPG/PNG).
 
-Review AI breed suggestion and alternatives.
+Review AI breed suggestion and alternative predictions.
 
-Confirm or manually select breed.
+Confirm AI suggestion or manually select the correct breed.
 
 Complete BPA registration (owner info, farm details, animal metrics, production data).
 
 Access educational resources and YouTube training content.
 
-📊 Analytics Dashboard
+### 📊 Analytics Dashboard
 Real-time breed distribution and registration tracking
 
 Geographic distribution (state/district level)
@@ -168,7 +168,7 @@ Production analysis (milk yield, age correlations)
 
 Exportable registration records
 
-🌍 Impact & Benefits
+### 🌍 Impact & Benefits
 ✅ Improved data quality & reduced breed misclassification
 
 ✅ Faster, efficient animal registration
@@ -177,7 +177,7 @@ Exportable registration records
 
 ✅ Empowered FLWs with AI assistance and multi-language support
 
-🚀 Future Scope
+### 🚀 Future Scope
 Video-based breed identification
 
 Multi-angle verification & age estimation
@@ -188,20 +188,18 @@ Direct BPA server integration & veterinary services
 
 Cloud-based deployment & API for third-party integration
 
-## ⚠️ Disclaimer
+### ⚠️ Disclaimer
+Note: Developed for educational and demonstration purposes (SIH 2025).
+AI suggestions should not replace human verification. Manual confirmation by trained FLWs or veterinary experts is mandatory.
+The developers are not responsible for any consequences arising from use of AI suggestions.
 
-> **Note:** Developed for educational and demonstration purposes (SIH 2025).  
-> AI suggestions **should not replace human verification**. Manual confirmation by trained FLWs or veterinary experts is mandatory.  
-> The developers are **not responsible** for any consequences arising from use of AI suggestions.
-
-
-🎓 Developed During SIH 2025
+### 🎓 Developed During SIH 2025
 Problem ID: 25004
 Ministry: Ministry of Fisheries, Animal Husbandry & Dairying
 
 This project was created as part of Smart India Hackathon 2025 for image-based breed recognition of cattle and buffaloes in India.
 
-✅ Conclusion
+### ✅ Conclusion
 BPA Smart Breed Identifier combines AI, mobile technology, and multi-language support to:
 
 Assist FLWs in breed identification
