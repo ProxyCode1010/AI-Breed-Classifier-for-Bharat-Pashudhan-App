@@ -8,20 +8,20 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)  
-- [Problem Statement](#problem-statement)  
-- [Key Features](#key-features)  
-- [Technology Stack](#technology-stack)  
-- [System Architecture](#system-architecture)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Supported Breeds](#supported-breeds)  
-- [Analytics Dashboard](#analytics-dashboard)  
-- [Impact & Benefits](#impact--benefits)  
-- [Future Scope](#future-scope)  
-- [Disclaimer](#disclaimer)  
-- [Developed During SIH 2025](#developed-during-sih-2025)  
-- [Conclusion](#conclusion)  
+- [Overview](#-overview)  
+- [Problem Statement](#-problem-statement)  
+- [Key Features](#-key-features)  
+- [Technology Stack](#-technology-stack)  
+- [System Architecture](#-system-architecture)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Supported Breeds](#-supported-breeds)  
+- [Analytics Dashboard](#-analytics-dashboard)  
+- [Impact & Benefits](#-impact--benefits)  
+- [Future Scope](#-future-scope)  
+- [Disclaimer](#-disclaimer)  
+- [Developed During SIH 2025](#-developed-during-sih-2025)  
+- [Conclusion](#-conclusion)  
 
 ---
 
@@ -88,23 +88,23 @@ Manual breed identification often leads to:
 
 ## 🏗 System Architecture
 
+```
 📷 Animal Image
-│
-▼
+    │
+    ▼
 🧠 AI Model (MobileNetV2)
-│
-┌────┴────┐
-▼ ▼
-🎯 Breed Suggestion 🤖 Breed Info (Groq LLM)
-│ │
-▼ ▼
+    │
+    ┌────┴────┐
+    ▼         ▼
+🎯 Breed   🤖 Breed Info
+Suggestion    (Groq LLM)
+    │         │
+    ▼         ▼
 📋 BPA Registration & Data Collection
-│
-▼
+    │
+    ▼
 📊 Analytics Dashboard
-
-yaml
-Copy code
+```
 
 ---
 
@@ -121,6 +121,7 @@ Copy code
 git clone https://github.com/ProxyCode1010/AI-Breed-Classifier-for-Bharat-Pashudhan-App.git
 cd AI-Breed-Classifier-for-Bharat-Pashudhan-App
 ```
+
 ### Setup Virtual Environment
 ```bash
 # Linux/Mac
@@ -131,83 +132,98 @@ source venv/bin/activate
 python -m venv venv
 venv\Scripts\activate
 ```
+
 ### Install Dependencies
 ```bash
-Copy code
 pip install -r requirements.txt
-Configure API Keys
-Create a .env file in the project root:
 ```
-Copy code
-GROQ_API_KEY=your_groq_api_key_here
-### ▶️ Usage
-Launch the application:
 
+### Configure API Keys
+Create a `.env` file in the project root:
 ```bash
-Copy code
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+### Run Application
+```bash
 streamlit run app.py
 ```
-Select your preferred language from the sidebar.
 
-Upload a clear animal image (JPG/PNG).
+---
 
-Review AI breed suggestion and alternative predictions.
+## ▶️ Usage
 
-Confirm AI suggestion or manually select the correct breed.
+### Launch the application:
 
-Complete BPA registration (owner info, farm details, animal metrics, production data).
+```bash
+streamlit run app.py
+```
 
-Access educational resources and YouTube training content.
+1. Select your preferred language from the sidebar.
+2. Upload a clear animal image (JPG/PNG).
+3. Review AI breed suggestion and alternative predictions.
+4. Confirm AI suggestion or manually select the correct breed.
+5. Complete BPA registration (owner info, farm details, animal metrics, production data).
+6. Access educational resources and YouTube training content.
 
-### 📊 Analytics Dashboard
-Real-time breed distribution and registration tracking
+---
 
-Geographic distribution (state/district level)
+## 📊 Analytics Dashboard
 
-Production analysis (milk yield, age correlations)
+- Real-time breed distribution and registration tracking
+- Geographic distribution (state/district level)
+- Production analysis (milk yield, age correlations)
+- Exportable registration records
 
-Exportable registration records
+---
 
-### 🌍 Impact & Benefits
-✅ Improved data quality & reduced breed misclassification
+## 🌍 Impact & Benefits
 
-✅ Faster, efficient animal registration
+✅ Improved data quality & reduced breed misclassification  
+✅ Faster, efficient animal registration  
+✅ Better resource allocation & breeding program effectiveness  
+✅ Empowered FLWs with AI assistance and multi-language support  
 
-✅ Better resource allocation & breeding program effectiveness
+---
 
-✅ Empowered FLWs with AI assistance and multi-language support
+## 🚀 Future Scope
 
-### 🚀 Future Scope
-Video-based breed identification
+- Video-based breed identification
+- Multi-angle verification & age estimation
+- Mobile apps with offline mode
+- Direct BPA server integration & veterinary services
+- Cloud-based deployment & API for third-party integration
 
-Multi-angle verification & age estimation
+---
 
-Mobile apps with offline mode
+## ⚠️ Disclaimer
 
-Direct BPA server integration & veterinary services
+> **Note:** Developed for educational and demonstration purposes (SIH 2025).
+> 
+> AI suggestions should not replace human verification. Manual confirmation by trained FLWs or veterinary experts is mandatory.
+> 
+> The developers are not responsible for any consequences arising from use of AI suggestions.
 
-Cloud-based deployment & API for third-party integration
+---
 
-### ⚠️ Disclaimer
-Note: Developed for educational and demonstration purposes (SIH 2025).
-AI suggestions should not replace human verification. Manual confirmation by trained FLWs or veterinary experts is mandatory.
-The developers are not responsible for any consequences arising from use of AI suggestions.
+## 🎓 Developed During SIH 2025
 
-### 🎓 Developed During SIH 2025
-Problem ID: 25004
-Ministry: Ministry of Fisheries, Animal Husbandry & Dairying
+**Problem ID:** 25004  
+**Ministry:** Ministry of Fisheries, Animal Husbandry & Dairying
 
-This project was created as part of Smart India Hackathon 2025 for image-based breed recognition of cattle and buffaloes in India.
+This project was created as part of **Smart India Hackathon 2025** for image-based breed recognition of cattle and buffaloes in India.
 
-### ✅ Conclusion
-BPA Smart Breed Identifier combines AI, mobile technology, and multi-language support to:
+---
 
-Assist FLWs in breed identification
+## ✅ Conclusion
 
-Reduce data errors
+**BPA Smart Breed Identifier** combines AI, mobile technology, and multi-language support to:
 
-Enable faster and smarter BPA registration
+- Assist FLWs in breed identification
+- Reduce data errors
+- Enable faster and smarter BPA registration
+- Support better decision-making and livestock management
 
-Support better decision-making and livestock management
+---
 
-Made with 🐄 for sustainable livestock management and rural development
+**Made with 🐄 for sustainable livestock management and rural development**
